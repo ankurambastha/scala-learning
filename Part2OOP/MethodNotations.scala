@@ -34,6 +34,7 @@ object MethodNotations extends App {
   println(!randi)
 
   println(1.+(2))
+
   // all operators are methods
 
   // prefix notations

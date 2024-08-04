@@ -1,3 +1,5 @@
+package PartBasics
+
 object Expressions extends App{
   val x: Int = 1+2; // expressions
   println(x)

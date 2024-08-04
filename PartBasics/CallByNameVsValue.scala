@@ -1,3 +1,5 @@
+package PartBasics
+
 object CallByNameVsValue extends App{
 
   def calledByValue(x: Long): Unit = {
