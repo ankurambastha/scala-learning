@@ -3,7 +3,7 @@ package Part2OOP
 object InheritanceAndTraits extends App {
 class Animal {
   val creatureType = "Fog"
-  protected def eat(): Unit = println("nomnom")
+  def eat(): Unit = println("nomnom")
 
 }
   class Cat extends Animal{
@@ -32,12 +32,19 @@ class Animal {
 
   class NewAdult(name: String, age: Int) extends NewPerson
 
-  class Dog extends Animal{
-    override vals creatureType = "Zog"
+  class Dog(override val creatureType: String) extends Animal{
+//    override vals creatureType = "Zog"
     override def eat(): Unit = {
       println("dic dic")
     }
   }
+
+  val unknownAnimal: Animal = new Dog("K9")
+  unknownAnimal.eat()
+  // type substitution ( on a very broad sense -> polymorphism)
+
+  // overRIDING vs overLOADING
+
 
 }
 
