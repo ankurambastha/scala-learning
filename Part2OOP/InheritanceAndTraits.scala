@@ -17,6 +17,7 @@ class Animal {
   cat.crunch
 
 
+
   class Person(name: String, age: Int)
 //  class Adult(name: String, age: Int) extends Person
 // here since person is the parent class with name and age as constructor value so above defination will not work
