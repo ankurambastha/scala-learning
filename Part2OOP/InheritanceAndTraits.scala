@@ -1,3 +1,4 @@
+
 package Part2OOP
 
 object InheritanceAndTraits extends App {
